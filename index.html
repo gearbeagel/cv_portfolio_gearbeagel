@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unique Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="sidebar bg-dark text-white p-4">
+    <h1>Victoria Kondratska</h1>
+    <p>Back End Developer</p>
+    <br>
+    <nav class="nav flex-column">
+      <a class="nav-link text-white" href="#home" onclick="showSection('home')">Home</a>
+      <a class="nav-link text-white" href="#info" onclick="showSection('info')">Info</a>
+      <a class="nav-link text-white" href="#projects" onclick="showSection('projects')">Projects</a>
+      <a class="nav-link text-white" href="#contact" onclick="showSection('contact')">Contact</a>
+    </nav>
+  </div>
+
+  <div class="content p-5">
+    <section id="home" class="mb-5">
+      <h2>Welcome to My Portfolio</h2>
+      <p class="mt-5">A showcase of my various development projects.</p>
+    </section>
+
+    <section id="info" class="mb-5" style="display:none;">
+      <h2>About Me</h2>
+      <div class="mt-5">
+        <p>I am a rookie back-end developer, who wishes to upgrade their skills on coding, conflict management and team work in general. 
+        <br>I consider myself a quick learner, eager to get new knowledge and unique experience. 
+        <br>I have worked on a bunch of projects and consider myself moderately experienced in Python development.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="mb-5" style="display:none;">
+      <h2>Projects</h2>
+      <div class="row mt-5">
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">Universe Navigator</h2>
+              <h5 class="card-text">Python (Flask), SQLAlchemy, HTML, CSS, Boostrap</h5>
+              <p class="card-text">This is a web application for writers to organise their characters, terminology and other things. Was created as a course work.</p>
+              <p class="card-text"><a href='https://github.com/gearbeagel/universe_navigator'>Link to GitHub repository</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">Lit List Bot</h2>
+              <h5 class="card-text">Python (Telebot)</h5>
+              <p class="card-text">This is a project that is created to organise literature lists for different purposes: courseworks, dissertations.</p>
+              <p class="card-text"><a href='https://github.com/gearbeagel/LitList'>Link to GitHub repository</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">Airplane Learning: Polyglot Pro</h2>
+              <h5 class="card-text">Python (Django), Azure (App Service, MSSQL, Blob Storage), HTML, CSS, Bootstrap, JS</h5>
+              <p class="card-text">This is a language learning application, that has a wide variely of functions. Created as a project for a university subject.</p>
+              <p class="card-text"><a href='https://github.com/gearbeagel/Kondratska.University.AirplaneLearning'>Link to GitHub repository</a></p>
+              <p class="card-text"><a href="https://airplanelearningpolyglotpto.azurewebsites.net">Link to the website</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">See Ya In A Bunch</h2>
+              <h5 class="card-text">Python (Django, DRF), Heroku, PostGreSQL, HTML, CSS, Bootstrap, JS</h5>
+              <p class="card-text">This web application serves as a time capsule.</p>
+              <p class="card-text"><a href='https://github.com/gearbeagel/SYIAB'>Link to GitHub repository</a></p>
+              <p class="card-text"><a href="https://syiab-107fe1310617.herokuapp.com/">Link to the website</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="mb-5" style="display:none;">
+      <h2>Contact</h2>
+      <div class="contact-links mt-5">
+        <a href="https://github.com/gearbeagel" target="_blank" class="d-block mb-2 text-white">GitHub</a>
+        <a href="https://www.linkedin.com/in/victoria-kondratskaya-3a4796251/" target="_blank" class="d-block mb-2 text-white">LinkedIn</a>
+        <a href="mailto:kondratskayavictoria@gmail.com" class="d-block mb-2 text-white">Email</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
