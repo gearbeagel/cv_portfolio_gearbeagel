@@ -7,20 +7,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Add Font Awesome CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="sidebar bg-dark text-white p-4">
-    <h1>Victoria Kondratska</h1>
-    <p>Back End Developer</p>
-    <br>
-    <nav class="nav flex-column">
-      <a class="nav-link text-white" href="#home" onclick="showSection('home')">Home</a>
-      <a class="nav-link text-white" href="#info" onclick="showSection('info')">Info</a>
-      <a class="nav-link text-white" href="#projects" onclick="showSection('projects')">Projects</a>
-      <a class="nav-link text-white" href="#contact" onclick="showSection('contact')">Contact</a>
-    </nav>
-  </div>
+    <div class="sidebar bg-dark text-white p-4">
+        <h1 class="d-none d-sm-block">Victoria Kondratska</h1> <!-- Hide on phones -->
+        <p class="d-none d-sm-block">Back End Developer</p> <!-- Hide on phones -->
+        <h1 class="d-sm-none mb-0">&#8801;</h1> <!-- Show on phones -->
+        <nav class="nav flex-column">
+          <a class="nav-link text-white" href="#home" onclick="showSection('home')"><i class="fas fa-home"></i> <span>Home</span></a>
+          <a class="nav-link text-white" href="#info" onclick="showSection('info')"><i class="fas fa-info-circle"></i> <span>Info</span></a>
+          <a class="nav-link text-white" href="#projects" onclick="showSection('projects')"><i class="fas fa-project-diagram"></i> <span>Projects</span></a>
+          <a class="nav-link text-white" href="#contact" onclick="showSection('contact')"><i class="fas fa-envelope"></i> <span>Contact</span></a>
+        </nav>
+      </div>
 
   <div class="content p-5">
     <section id="home" class="mb-5">
@@ -44,7 +45,7 @@
           <div class="card bg-dark text-white">
             <div class="card-body">
               <h2 class="card-title">Universe Navigator</h2>
-              <h5 class="card-text">Python (Flask), SQLAlchemy, HTML, CSS, Boostrap</h5>
+              <h5 class="card-text">Python (Flask), SQLAlchemy, HTML, CSS, Bootstrap</h5>
               <p class="card-text">This is a web application for writers to organise their characters, terminology and other things. Was created as a course work.</p>
               <p class="card-text"><a href='https://github.com/gearbeagel/universe_navigator'>Link to GitHub repository</a></p>
             </div>
@@ -88,9 +89,9 @@
     <section id="contact" class="mb-5" style="display:none;">
       <h2>Contact</h2>
       <div class="contact-links mt-5">
-        <a href="https://github.com/gearbeagel" target="_blank" class="d-block mb-2 text-white">GitHub</a>
-        <a href="https://www.linkedin.com/in/victoria-kondratskaya-3a4796251/" target="_blank" class="d-block mb-2 text-white">LinkedIn</a>
-        <a href="mailto:kondratskayavictoria@gmail.com" class="d-block mb-2 text-white">Email</a>
+        <a href="https://github.com/gearbeagel" target="_blank" class="d-block mb-2 text-white"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/victoria-kondratskaya-3a4796251/" target="_blank" class="d-block mb-2 text-white"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="mailto:kondratskayavictoria@gmail.com" class="d-block mb-2 text-white"><i class="far fa-envelope"></i> Email</a>
       </div>
     </section>
   </div>

@@ -29,3 +29,9 @@ body {
   .row > .col-md-6 {
   margin-bottom: 20px;
   }
+
+  @media (max-width: 576px) { /* Apply styles for phones */
+    .sidebar h1.d-sm-none, .sidebar p.d-sm-none {
+      display: none; /* Hide name and job title on phones */
+    }
+  }
