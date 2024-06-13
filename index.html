@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vic's Portfolio</title>
+  <title>Vic's CV & Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
@@ -16,17 +16,31 @@
         <p class="d-none d-sm-block">Back End Developer</p> <!-- Hide on phones -->
         <h1 class="d-sm-none mb-0">&#8801;</h1> <!-- Show on phones -->
         <nav class="nav flex-column">
-          <a class="nav-link text-white" href="#home" onclick="showSection('home')"><i class="fas fa-home"></i> <span>Home</span></a>
-          <a class="nav-link text-white" href="#info" onclick="showSection('info')"><i class="fas fa-info-circle"></i> <span>Info</span></a>
-          <a class="nav-link text-white" href="#projects" onclick="showSection('projects')"><i class="fas fa-project-diagram"></i> <span>Projects</span></a>
-          <a class="nav-link text-white" href="#contact" onclick="showSection('contact')"><i class="fas fa-envelope"></i> <span>Contact</span></a>
+          <a class="nav-link text-white" href="#home" onclick="showSection('home')">
+            <i class="fas fa-home"></i> <span>Home</span>
+          </a>
+          <a class="nav-link text-white" href="#info" onclick="showSection('info')">
+            <i class="fas fa-info-circle"></i> <span>About me</span>
+          </a>
+          <a class="nav-link text-white" href="#education" onclick="showSection('education')">
+            <i class="fas fa-graduation-cap"></i> <span>Education</span>
+          </a>
+          <a class="nav-link text-white" href="#employment" onclick="showSection('employment')">
+            <i class="fas fa-briefcase"></i> <span>Employment</span>
+          </a>
+          <a class="nav-link text-white" href="#projects" onclick="showSection('projects')">
+            <i class="fas fa-project-diagram"></i> <span>Projects</span>
+          </a>
+          <a class="nav-link text-white" href="#contact" onclick="showSection('contact')">
+            <i class="fas fa-envelope"></i> <span>Contact</span>
+          </a>
         </nav>
       </div>
 
   <div class="content p-5">
     <section id="home" class="mb-5">
-      <h2>Welcome to My Portfolio</h2>
-      <p class="mt-5">A showcase of my various development projects.</p>
+      <h2>Welcome to My CV</h2>
+      <p class="mt-5">My CV and a showcase of my various development projects.</p>
     </section>
 
     <section id="info" class="mb-5" style="display:none;">
@@ -35,6 +49,39 @@
         <p>I am a rookie back-end developer, who wishes to upgrade their skills on coding, conflict management and team work in general. 
         <br>I consider myself a quick learner, eager to get new knowledge and unique experience. 
         <br>I have worked on a bunch of projects and consider myself moderately experienced in Python development.</p>
+      </div>
+    </section>
+
+    <section id="education" class="mb-5" style="display:none;">
+      <h2>Education History</h2>
+      <div class="row mt-5 ml-3" style="text-align: left;">
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">Lviv National University Ivan Franko</h2>
+              <h5 class="card-text">Lviv</h5>
+              <p class="card-text">September 2022 - Present</p>
+              <p class="card-text">Currently studying as a Software Engineer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="employment" class="mb-5" style="display:none;">
+      <h2>Employment History</h2>
+      <div class="row mt-5 ml-3" style="text-align: left;">
+        <div class="col-md-6 mb-3">
+          <div class="card bg-dark text-white">
+            <div class="card-body">
+              <h2 class="card-title">Helen Doron English</h2>
+              <h5 class="card-text">Lviv</h5>
+              <p class="card-text">November 2022 - January 2024</p>
+              <p class="card-text">English Teacher</p>
+              <p class="card-text">Shown myself as an understanding, passionate and relatable role model for older students and provided fun and leisure for younger students.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
